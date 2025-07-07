@@ -1,0 +1,27 @@
+/* Estilos para el editor de bloques */
+.wp-block-clientes-plugin-cliente-destacado {
+    position: relative;
+}
+
+.cliente-destacado-preview {
+    min-height: 100px;
+}
+
+.components-panel__body .cliente-config-section {
+    margin-bottom: 20px;
+}
+
+.cliente-config-section h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.components-base-control__field {
+    margin-bottom: 15px;
+}
+
+.cliente-preview-disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}

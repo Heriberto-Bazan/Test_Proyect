@@ -1,0 +1,129 @@
+/* Estilos para bloques de clientes */
+.cliente-destacado-block {
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    margin: 1em 0;
+}
+
+.cliente-destacado-block:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.cliente-destacado-content {
+    position: relative;
+}
+
+.cliente-nombre {
+    margin: 0 0 15px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.cliente-email,
+.cliente-empresa,
+.cliente-origen,
+.cliente-telefono {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.cliente-label {
+    font-weight: bold;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.cliente-email-link,
+.cliente-telefono-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.cliente-email-link:hover,
+.cliente-telefono-link:hover {
+    text-decoration: underline;
+}
+
+.cliente-origen-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.origen-web {
+    background-color: #46b450;
+    color: white;
+}
+
+.origen-feria {
+    background-color: #ffb900;
+    color: white;
+}
+
+.origen-referido {
+    background-color: #826eb4;
+    color: white;
+}
+
+.cliente-actions {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.cliente-view-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: rgba(0,0,0,0.05);
+    color: inherit;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.cliente-view-link:hover {
+    background-color: rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+
+.cliente-destacado-empty,
+.cliente-destacado-error {
+    padding: 20px;
+    text-align: center;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #666;
+}
+
+.cliente-destacado-error {
+    border-color: #dc3232;
+    background-color: #ffeaea;
+    color: #dc3232;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cliente-email,
+    .cliente-empresa,
+    .cliente-origen,
+    .cliente-telefono {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    
+    .cliente-nombre {
+        font-size: 1.3em;
+    }
+}
