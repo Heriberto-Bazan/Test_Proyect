@@ -1,4 +1,4 @@
-# Test Project - Desarrollo de Componentes Joomla con Docker
+# Integración con WordPress, Joomla y HubSpot
 
 Entorno de desarrollo completo con Docker para crear componentes Joomla y plugins WordPress con soporte para múltiples CMS y base de datos MySQL.
 
